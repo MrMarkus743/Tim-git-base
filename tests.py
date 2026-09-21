@@ -1,16 +1,10 @@
 #Тесты для проверки правильности работы функции по вычислению факториала
 from factorial import factorial
 
-# Проверяем на числах
-print("Проверка работы функции:")
-print("0! =", factorial(0))
-print("1! =", factorial(1))
-print("5! =", factorial(5))
-print("10! =", factorial(10))
+# Проверяем работу функции
+assert factorial(0) == 1, "Ошибка: 0! должен быть 1"
+assert factorial(1) == 1, "Ошибка: 1! должен быть 1"
+assert factorial(5) == 120, "Ошибка: 5! должен быть 120"
+assert factorial(10) == 3628800, "Ошибка: 10! должен быть 3628800"
 
-# Сравниваем с правильными ответами
-print("\nРезультаты:")
-print("0! = 1", factorial(0) == 1)
-print("1! = 1", factorial(1) == 1)
-print("5! = 120", factorial(5) == 120)
-print("10! = 3628800", factorial(10) == 3628800)
+print("Все тесты пройдены успешно!")
